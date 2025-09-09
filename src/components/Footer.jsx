@@ -63,11 +63,11 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: 'fab fa-facebook-f', url: '#' },
-    { name: 'Twitter', icon: 'fab fa-twitter', url: '#' },
-    { name: 'LinkedIn', icon: 'fab fa-linkedin-in', url: '#' },
-    { name: 'Instagram', icon: 'fab fa-instagram', url: '#' },
-    { name: 'YouTube', icon: 'fab fa-youtube', url: '#' }
+    { name: 'Facebook', icon: 'fab fa-facebook-f', url: 'https://www.instagram.com/locanova.digital' },
+    { name: 'Twitter', icon: 'fab fa-twitter', url: 'https://www.linkedin.com/in/raunak-kumar77' },
+    { name: 'LinkedIn', icon: 'fab fa-linkedin-in', url: 'https://www.linkedin.com/in/raunak-kumar77' },
+    { name: 'Instagram', icon: 'fab fa-instagram', url: 'https://www.instagram.com/locanova.digital' },
+    { name: 'YouTube', icon: 'fab fa-youtube', url: 'https://youtube.com/@locanovabyraunak' }
   ];
 
   return (
@@ -86,7 +86,7 @@ export default function Footer() {
               >
                 <div className="footer-brand">
                   <div className="logo-container">
-                    <span className="logo-text">LOC</span>
+                    <span className="logo-text">LOCANOVA</span>
                     <span className="logo-dot">.</span>
                   </div>
                   <p className="footer-description">
@@ -96,15 +96,15 @@ export default function Footer() {
                   <div className="contact-info">
                     <div className="contact-item">
                       <i className="fas fa-envelope"></i>
-                      <span>vraunakraj456@gmail.com</span>
+                      <span>locanova.digital@gmail.com</span>
                     </div>
                     <div className="contact-item">
                       <i className="fas fa-phone"></i>
-                      <span>+91 7766828618</span>
+                      <span>+91 8084868414</span>
                     </div>
                     <div className="contact-item">
                       <i className="fab fa-whatsapp"></i>
-                      <span>+91 7766828618</span>
+                      <span>+91 8084868414</span>
                     </div>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export default function Footer() {
                       <input
                         type="email"
                         className="form-control"
-                        placeholder="Enter your email"
+                        placeholder="locanova.digital.com"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
@@ -243,7 +243,7 @@ export default function Footer() {
                 viewport={{ once: true }}
               >
                 <p className="copyright">
-                  © {currentYear} LOC. All rights reserved. Made with ❤️ for your success.
+                  © {currentYear} LOCanova. All rights reserved. Made with ❤️ for your success.
                 </p>
               </MotionDiv>
             </div>

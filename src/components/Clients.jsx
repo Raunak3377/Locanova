@@ -3,14 +3,14 @@ import './Clients.css';
 
 const Clients = () => {
   const clients = [
-    { name: "Jawed Habib Saloon", logo: "🏢" },
-    { name: "KIDZEE PLAY SCHOOL", logo: "" },
-    { name: "BRAVE INSTITUTE ARA", logo: "" },
-    { name: "AURA NATIONAL ACADEMY", logo: "☁️" },
-    { name: "MANYAVAR OUTLETS", logo: "📊" },
-    { name: "BATA SHOWROOM", logo: "🌐" },
-    { name: "RANJAN SHOE STORE", logo: "📱" },
-    { name: "AKASH INSTITUTE PATNA", logo: "⚡" },
+    { name: "Jawed Habib Saloon", logo: "🏤" },
+    { name: "KIDZEE PLAY SCHOOL", logo: "🏨" },
+    { name: "BRAVE INSTITUTE ARA", logo: "🏨" },
+    { name: "AURA NATIONAL ACADEMY", logo: "🏨" },
+    { name: "MANYAVAR OUTLETS", logo: "🏨" },
+    { name: "BATA SHOWROOM", logo: "🏨" },
+    { name: "RANJAN SHOE STORE", logo: "🏨" },
+    { name: "AKASH INSTITUTE PATNA", logo: "🏨" },
    
   ];
 

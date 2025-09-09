@@ -40,7 +40,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
   const menuItems = [
     { name: 'Home', href: '#home', page: 'home' },
     { name: 'Services', href: '#services', page: 'home' },
-    { name: 'Clients', href: '#clients', page: 'home' },
+    { name: 'Pricing', href: '#pricing', page: 'pricing' }, // replaced Clients
     { name: 'Blog', href: '#blog', page: 'blog' },
     { name: 'Contact', href: '#contact', page: 'contact' }
   ];
@@ -56,7 +56,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
           transition={{ duration: 0.6 }}
         >
           <div className="logo-container">
-            <span className="logo-text">LOC</span>
+            <span className="logo-text">LOCANOVA</span>
             <span className="logo-dot">.</span>
           </div>
         </motion.div>
@@ -115,7 +115,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
               >
                 <div className="mobile-menu-header">
                   <div className="logo-container">
-                    <span className="logo-text">LOC</span>
+                    <span className="logo-text">LOCANOVA</span>
                     <span className="logo-dot">.</span>
                   </div>
                   <button 

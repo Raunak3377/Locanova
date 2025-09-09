@@ -105,7 +105,7 @@ Looking forward to hearing from you!`;
 
     const encodedMessage = encodeURIComponent(whatsappMessage);
     const whatsappNumber = '1234567890'; // Replace with your WhatsApp number
-    const whatsappUrl = `https://wa.me/7766828618?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/8084668414?text=${encodedMessage}`;
     
     window.open(whatsappUrl, '_blank');
   };
@@ -236,7 +236,7 @@ Looking forward to hearing from you!`;
                           id="email"
                           name="email"
                           className="form-control"
-                          placeholder="your.email@example.com"
+                          placeholder="your.locanova.digital.com"
                           value={formData.email}
                           onChange={handleInputChange}
                           required

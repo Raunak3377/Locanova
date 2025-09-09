@@ -7,8 +7,11 @@ import ValueProposition from './components/ValueProposition.jsx'
 import Clients from './components/Clients.jsx'
 import Team from './components/Team.jsx'
 import Blog from './pages/Blog.jsx'
+import Pricing from './components/Pricing';
+
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import WhatsAppButton from './components/WhatsAppButton';
 import './App.css'
 
 function App() {
@@ -25,6 +28,8 @@ function App() {
         return <Blog />
       case 'contact':
         return <Contact />
+      case 'pricing':
+        return <Pricing />
       case 'home':
       default:
         return (
@@ -32,6 +37,7 @@ function App() {
             <Hero />
             <Services />
             <Capabilities />
+            <Pricing/>
             <ValueProposition />
             <Clients />
             <Team />
@@ -45,6 +51,7 @@ function App() {
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       {renderPage()}
       <Footer />
+      <WhatsAppButton />
     </div>
   )
 }

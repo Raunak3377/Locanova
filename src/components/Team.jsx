@@ -6,7 +6,8 @@ const Team = () => {
     {
       name: "RAUNAK KUMAR",
       role: "CEO & Founder",
-      image: "👩‍💼",
+      linkedin: "https://www.linkedin.com/in/raunak-kumar77",
+      image: "👨‍💼",
       description: "3+ years in digital marketing strategy"
     },
     {
@@ -18,8 +19,8 @@ const Team = () => {
     {
       name: "RAJVEER RAUSHAN",
       role: "FIELD MANAGER",
-      image: "👩‍🎨",
-      description: "Award-winning designer and brand strategist"
+      image: "👨",
+      description: "local advertising expert and ad strategist"
     },
     {
       name: "RAUNAK KARN",
@@ -52,7 +53,7 @@ const Team = () => {
                 <p className="member-description">{member.description}</p>
               </div>
               <div className="member-social">
-                <a href="#" className="social-link">LinkedIn</a>
+                <a href={member.linkedin ? member.linkedin : "#"} className="social-link" target='_blank'>LinkedIn</a>
                 <a href="#" className="social-link">Twitter</a>
               </div>
             </div>

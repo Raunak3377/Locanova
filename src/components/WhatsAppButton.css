@@ -1,0 +1,66 @@
+.whatsapp-cta {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #25d366;
+  color: #fff;
+  border-radius: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  padding: 0.5rem 1.2rem 0.5rem 0.7rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+  animation: fadeInWhatsApp 1s ease;
+}
+
+.whatsapp-cta:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+  transform: scale(1.05);
+}
+
+.whatsapp-bounce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounceWhatsApp 1.2s infinite;
+}
+
+.whatsapp-icon {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.whatsapp-msg {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+@keyframes bounceWhatsApp {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-8px);}
+}
+
+@keyframes fadeInWhatsApp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive: Hide text on very small screens */
+@media (max-width: 480px) {
+  .whatsapp-msg {
+    display: none;
+  }
+  .whatsapp-cta {
+    padding: 0.5rem 0.7rem;
+    border-radius: 50%;
+  }
+}
+
+/* Font Awesome CDN Link - Add this in your HTML file within the <head> section
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+*/

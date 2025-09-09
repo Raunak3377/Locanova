@@ -1,9 +1,12 @@
 {
   "name": "vite-project",
+  "homepage": "https://raunak3377.github.io/Locanova/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "prediploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",

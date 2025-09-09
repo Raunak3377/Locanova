@@ -1,6 +1,12 @@
 import React from 'react';
 import './ValueProposition.css';
 
+function openWhatsApp() {
+      const phoneNumber = "918084668414"; // Add country code (91 for India)
+      const message = "hey i love to coonect with you";
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+}
 const ValueProposition = () => {
   const stats = [
     { number: "20+", label: "Happy Clients" },
@@ -30,7 +36,7 @@ const ValueProposition = () => {
               ))}
             </div>
             <div className="value-cta">
-              <button className="btn btn-primary">Get Started Today</button>
+              <button onClick={openWhatsApp} className="btn btn-primary">Get Started Today</button>
               <button className="btn btn-secondary">Learn More</button>
             </div>
           </div>

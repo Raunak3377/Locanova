@@ -244,19 +244,106 @@
 }
 
 @media (max-width: 575.98px) {
-  .mobile-menu {
-    padding: 1.5rem 0.75rem 1.5rem 0.75rem;
+  .navbar {
+    padding: 0.5rem 0;
+    min-height: 56px;
+  }
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   .logo-text {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   .logo-dot {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .navbar-toggler {
+    width: 28px;
+    height: 28px;
+    top: 0.7rem;
+    right: 0.7rem;
+  }
+  .mobile-menu {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    min-width: 100vw;
+    min-height: 100vh;
+    box-shadow: none;
+  }
+  .mobile-menu-header {
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
   }
   .close-btn {
-    font-size: 2rem;
-    width: 40px;
-    height: 40px;
+    font-size: 1.5rem;
+    width: 32px;
+    height: 32px;
+  }
+  .mobile-menu-items {
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  .mobile-menu-item {
+    font-size: 1.1rem;
+    padding: 0.7rem 0;
+    border-radius: 6px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    transition: background 0.2s, color 0.2s, transform 0.3s;
+    animation: slideInLeft 0.5s cubic-bezier(.68,-0.55,.27,1.55) both;
+  }
+  .mobile-menu-item:nth-child(1) { animation-delay: 0.1s; }
+  .mobile-menu-item:nth-child(2) { animation-delay: 0.2s; }
+  .mobile-menu-item:nth-child(3) { animation-delay: 0.3s; }
+  .mobile-menu-item:nth-child(4) { animation-delay: 0.4s; }
+  .mobile-menu-item:nth-child(5) { animation-delay: 0.5s; }
+  .mobile-menu-footer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+  .mobile-menu-footer .btn {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+    border-radius: 8px;
+  }
+}
+
+/* Slide-in animation for mobile menu items */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animate mobile menu overlay fade-in */
+.mobile-menu-overlay {
+  animation: fadeInOverlay 0.4s cubic-bezier(.68,-0.55,.27,1.55) both;
+}
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animate mobile menu slide-in */
+.mobile-menu {
+  animation: slideInMenu 0.5s cubic-bezier(.68,-0.55,.27,1.55) both;
+}
+@keyframes slideInMenu {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
